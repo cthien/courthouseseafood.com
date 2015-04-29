@@ -1,5 +1,16 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
 
+body {
+  background: #a0d8ef; /* Old browsers */
+  background: -moz-linear-gradient(top,  #a0d8ef 0%, #ddf1f9 65%, #feffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0d8ef), color-stop(65%,#ddf1f9), color-stop(100%,#feffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #a0d8ef 0%,#ddf1f9 65%,#feffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+
+}
 img {
 	max-width: 100%;
 }
