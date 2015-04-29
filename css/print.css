@@ -1,0 +1,62 @@
+header.masthead, #creditcards, .dialog, .col2 nav h3, .col2 nav ul, #menu .marketphone, #fax, p.flag, footer.fineprint {
+display: none;
+}
+#wrapper, #main, .col1, .col2, .col2 dl, .col2 dt, .col2 dl, .col2 dl ul, table {
+float: none;
+display: block;
+width: 100%;
+border: none;
+}
+body {
+	font: Verdana, Geneva, Arial, sans-serif;
+	color: #000;
+	background: #fff;
+	font-size: 8pt;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+margin: 0;
+float: left;
+width: 100%;
+}
+table {
+padding: 3pt;
+border: thin solid #ccc;
+margin: 3pt;
+width: 47%;
+float: left;
+display: inline;
+}
+th {
+text-align: left;
+}
+tfoot td {
+border: none;
+font-weight: bold;
+font-size: 8pt;
+}
+tbody th {
+font-weight: normal;
+}
+caption {
+font-weight: bold;
+}
+.first {
+width: 150pt;
+}
+.col2 footer dl {
+clear: left;
+font-weight: bold;
+font-size: 11pt;
+}
+.col2 footer dl, .col2 footer dd {
+margin: 0;
+padding: 0;
+}
+.col2 footer dl ul ul li {
+display: inline;
+}
+/*table, thead, tfoot, tr {
+page-break-inside: avoid;
+}*/
