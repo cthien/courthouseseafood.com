@@ -12,10 +12,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-<div class="vcard container">
-  <header class="row">
-  <div class="col-md-2"> <img src="img/readerschoice.png" alt="Wicked Local Readers' Choice Awards" title="Regional Favorite winner of Readers' Choice Awards 2013"/> </div>
-  <div class="col-md-8">
+<div class="vcard wrapper">
+  <header class="header">
+  <div class="col-award">
+    <img src="img/readerschoice.png" alt="Wicked Local Readers' Choice Awards" title="Regional Favorite winner of Readers' Choice Awards 2013"/>
+  </div>
+  <div class="col-brand">
     <h1 class="fn org">Courthouse Seafood</h1>
     <nav>
       <ul>
@@ -26,15 +28,22 @@
     <h2>Quality Fresh Fish Since 1912</h2>
     <h3>We are committed to providing you with fresh seafood and friendly service.</h3>
   </div>
-  <div class="col-md-2"
-    
-  <p id="creditcards"><img src="img/ccards.png" alt="Courthouse Seafood Restaurant and Market accept Visa and Mastercard" /></p>
-</div>
+  <div class="col-cards"
+    <p id="creditcards"><img src="img/ccards.png" alt="Courthouse Seafood Restaurant and Market accept Visa and Mastercard" /></p>
+  </div>
 </header>
 <!-- .masthead -->
-<aside> 
-    <a class="pull-left" data-toggle="modal" data-target="#photos" title="The restaurant from the outside"><img src="img/restaurant_sm.jpg" alt="Courthouse Seafood Restaurant" /></a> 
-    <a class="pull-left" data-toggle="modal" data-target="#photos" title="Fisherman's Platter from the restaurant"><img src="img/plate_sm.jpg" alt="Plate of fried seafood" /></a>
+<aside class="photos">
+  <div>
+    <a  data-toggle="modal" data-target="#photos" title="The restaurant from the outside">
+      <img src="img/restaurant_sm.jpg" alt="Courthouse Seafood Restaurant" />
+    </a>
+  </div>
+  <div>
+    <a  data-toggle="modal" data-target="#photos" title="Fisherman's Platter from the restaurant">
+      <img src="img/plate_sm.jpg" alt="Plate of fried seafood" />
+    </a>
+  </div>
 </aside>
 <div id="main">
   </header>
@@ -104,8 +113,8 @@
   </div>
   <!-- /.modal -->
   
-  <article class="row">
-    <div class="col-md-3">
+  <article class="main">
+    <div class="col-nav">
       <nav>
         <h3><a href="menu.html" title="Courthouse Seafood Restaurant Menu">Menu</a></h3>
         <ul>
@@ -145,14 +154,14 @@
     </div>
 
 
-      <section class="content col-md-6">
+      <section class="col-content">
         <h2>Restaurant and Fish Market</h2>
         <p>In 1912 Court House Seafood Market opened in the Portuguese community of East Cambridge. The Damaso family came here from Portugal and like many others found Court House Seafood Market to be a touch of home in their new land.</p>
         <p>Young Al Damaso's father asked the owner if he might have a job for his son. In 1967 Al bought the Market from the retiring Mr. Travis. Al expanded the scope of the market, then came upon the idea of preparing the fish so local families would have a place to buy quality food that they did not have to cook at home.</p>
         <p>In 1987 the Damaso family opened the separate restaurant next door from the market, splitting the business into two distinct stores located next to each other. Both businesses are thriving today, staffed by family members Eddy, Joe, and Diane, along with an extended family of dedicated coworkers.</p>
       </section>
       <!-- .content -->
-      <footer class="extras col-md-3">
+      <footer class="col-contact">
         <div class="box">
           <dl>
             <dt>Address</dt>
@@ -190,13 +199,24 @@
 
 
   </article>
-  <aside class="clear"> <a class="pull-right" data-toggle="modal" data-target="#photos" title="Fresh Seafood at the Fish Market"><img src="img/freshseafood_sm.jpg" alt="Fresh Seafood at the Fish Market" /></a> <a class="pull-right" data-toggle="modal" data-target="#photos" title="The Fish Market from the outside"><img src="img/fishmarket_sm.jpg" alt="Courthouse Fish Market" /></a> </aside>
+  <aside class="photos">
+    <div>
+      <a data-toggle="modal" data-target="#photos" title="Fresh Seafood at the Fish Market">
+        <img src="img/freshseafood_sm.jpg" alt="Fresh Seafood at the Fish Market" />
+      </a>
+    </div>
+    <div>
+      <a data-toggle="modal" data-target="#photos" title="The Fish Market from the outside">
+        <img src="img/fishmarket_sm.jpg" alt="Courthouse Fish Market" />
+      </a>
+    </div>
+  </aside>
 
   <footer class="fineprint">
     <p>&copy;2015 Courthouse Seafood</p>
   </footer>
 </div>
-<!-- #wrapper --> 
+<!-- .container -->
 
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script> 
 <script src="js/functions.js"></script> 
