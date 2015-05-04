@@ -1,7 +1,9 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../../bower_components/normalize.css/normalize.css';
 
 body {
   color: #333;
+  font: 1.5rem "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff; /* Old browsers */
   background: -moz-linear-gradient(top,  #a0d8ef 0%, #ddf1f9 65%, #feffff 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a0d8ef), color-stop(65%,#ddf1f9), color-stop(100%,#feffff)); /* Chrome,Safari4+ */
@@ -16,55 +18,123 @@ body {
 img {
 	max-width: 100%;
 }
-.wrapper {
-  margin: 15px auto;
-  border: 1px solid #264679;
-  border-radius: 10px;
-}
+
+@font-face {
+  font-family: florencesans;
+  src: url(fonts/Florsn30.eot);
+  src: local("My Web Font"), url(../fonts/Florsn30.ttf) format("truetype"); 
+ }
 .header {
   background-color: #4F7BC2;
+  color: #fff;
+	text-align: center;
+	li {
+		display: inline-block;
+		& + li {
+			border-left: 1px solid #fff;
+			margin-left: 1rem;
+			padding-left: 1rem;
+		}
+	}
+	a {
+		color: #fff;
+	}
+  h1 {
+	  font: 3rem florencesans, Helvetica, Arial, sans-serif;
+  }
+	h2 {
+		color: #264679;
+		font-size: 2.4rem;
+		font-weight: normal;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
 }
 .col-nav,
-.fineprint{
+.fineprint,
+dt{
   background-color: #992D23;
   color: #fff;
   a {
     color: #fff;
   }
 }
-
-.main,
-.header,
-.photos{
-  display: table;
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p {
+	margin: .6rem 0;
 }
 .col-award,
-.col-brand,
-.col-cards,
-.col-nav,
-.col-content,
-.col-contact,
-.photos div{
-  display: table-cell;
-}
-.col-award,
-.col-brand,
-.col-nav,
-.col-contact {
-  width: 20%;
-}
-.col-brand,
 .col-content {
-  width: 60%;
+	display: none;
 }
-.photos div {
-  width: 50%;
-}
-.col-contact {
-  border-left: 1px dashed #992D23;
-}
-.fineprint {
-  padding: 1px 0;
+@media (min-width: 720px) {
+	.wrapper {
+		margin: 1.5rem auto;
+		border: 1px solid #264679;
+		border-radius: .8rem;
+	}
+	.col-award,
+	.col-content {
+		display: inherit;
+	}
+	.header {
+		h1 {
+			font-size: 5rem;
+		}
+	}
+
+	.main,
+	.header,
+	.photos{
+	  display: table;
+	}
+	.col-award,
+	.col-brand,
+	.col-cards,
+	.col-nav,
+	.col-content,
+	.col-contact,
+	.photos div{
+	  display: table-cell;
+	}
+	.col-award,
+	.col-brand,
+	.col-cards,
+	.col-nav,
+	.col-content,
+	.col-contact {
+		padding: 0 20px;
+	}
+	.col-award,
+	.col-brand {
+		width: 12%;
+	}
+	.col-nav,
+	.col-contact {
+	  width: 20%;
+	  
+	}
+	.col-brand {
+	  width: 75%;
+	}
+	.col-content {
+	  width: 60%;
+	}
+	.photos div {
+	  width: 50%;
+	}
+	.col-contact {
+	  border-left: 1px dashed #992D23;
+	}
+	.fineprint {
+	  padding: 1px 1.5rem 1px 0;
+		text-align: right;
+	}
 }
 @media (min-width: 1200px) {
   .wrapper {
