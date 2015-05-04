@@ -39,16 +39,19 @@ img {
 	a {
 		color: #fff;
 	}
-  h1 {
-	  font: 3rem florencesans, Helvetica, Arial, sans-serif;
-  }
+    h1 {
+        font: 3rem florencesans, Helvetica, Arial, sans-serif;
+      margin-top: 0;
+    }
 	h2 {
 		color: #264679;
-		font-size: 2.4rem;
+		font-size: 1.4rem;
 		font-weight: normal;
 	}
 	h3 {
 		font-size: 1.4rem;
+      margin: 0;
+      padding: 1rem 0;
 	}
 }
 .col-nav,
@@ -60,6 +63,20 @@ dt{
     color: #fff;
   }
 }
+.col-nav {
+  padding: 0 1rem;
+  h3 {
+    margin: 0;
+    padding: 1rem 0;
+  }
+  li {
+    padding: .4rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+  dl li {
+    border-bottom: none;
+  }
+}
 ul {
 	margin: 0;
 	padding: 0;
@@ -69,8 +86,16 @@ p {
 	margin: .6rem 0;
 }
 .col-award,
+.col-cards,
+.header h2,
 .col-content {
 	display: none;
+}
+.fineprint {
+  p {
+    margin: 0;
+    padding: .6rem;
+  }
 }
 @media (min-width: 720px) {
 	.wrapper {
@@ -79,6 +104,8 @@ p {
 		border-radius: .8rem;
 	}
 	.col-award,
+    .col-cards,
+    .header h2,
 	.col-content {
 		display: inherit;
 	}
@@ -86,6 +113,9 @@ p {
 		h1 {
 			font-size: 5rem;
 		}
+	  h2 {
+		font-size: 2.4rem;
+	  }
 	}
 
 	.main,

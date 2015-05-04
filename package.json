@@ -7,7 +7,8 @@
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-connect": "^0.2.0"
   },
   "description": "East Cambridge restaurant and the fish market",
   "main": "Gruntfile.js",
