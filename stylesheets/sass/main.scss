@@ -30,7 +30,7 @@ img {
 	text-align: center;
 	li {
 		display: inline-block;
-		& + li {
+		+ li {
 			border-left: 1px solid #fff;
 			margin-left: 1rem;
 			padding-left: 1rem;
@@ -39,10 +39,10 @@ img {
 	a {
 		color: #fff;
 	}
-    h1 {
-        font: 3rem florencesans, Helvetica, Arial, sans-serif;
-      margin-top: 0;
-    }
+	h1 {
+		font: 3rem florencesans, Helvetica, Arial, sans-serif;
+		margin-top: 0;
+	}
 	h2 {
 		color: #264679;
 		font-size: 1.4rem;
@@ -50,13 +50,13 @@ img {
 	}
 	h3 {
 		font-size: 1.4rem;
-      margin: 0;
-      padding: 1rem 0;
+		margin: 0;
+		padding: 1rem 0;
 	}
 }
 .col-nav,
 .fineprint,
-dt{
+dt {
   background-color: #992D23;
   color: #fff;
   a {
@@ -69,18 +69,49 @@ dt{
     margin: 0;
     padding: 1rem 0;
   }
+	ul {
+		margin-bottom: 1.6rem;
+	}
   li {
+		list-style: none;
     padding: .4rem 0;
     border-bottom: 1px solid #ccc;
-  }
-  dl li {
-    border-bottom: none;
-  }
+  } 
+	footer {
+		padding-bottom: 1.6rem;
+		dl {
+			background-color: #4F7BC1;
+			color: #fff;
+			border: 1px solid #fff;
+			padding: .7rem;
+			margin: 0;
+			dt {
+				background-color: inherit;
+				margin-bottom: 1rem;
+			}
+			ul {
+				margin-bottom: 0;
+				ul li {
+					list-style: disc;
+					margin-left: 2rem;
+					padding: 0;
+				}
+				li:last-child {
+					margin-left: 2rem;
+				}
+			}
+			hr {
+				margin: 1.4rem 0 .5rem;
+			}
+			li {
+				border-bottom: none;
+			}
+		}
+	}
 }
 ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
 p {
 	margin: .6rem 0;
@@ -91,12 +122,41 @@ p {
 .col-content {
 	display: none;
 }
+.col-contact {
+	dt {
+		padding: 0 1rem;
+	}
+	dd {
+		margin: 0 1rem;
+		li {
+			font-weight: bold;
+			margin-top: 1.6rem;
+			ul li {
+				font-weight: normal;
+				margin-top: 0;
+			}
+		}
+		ul ul {
+			list-style: disc;
+			margin-left:2rem;
+		}
+	}
+}
+.col-content,
+.col-contact {
+	background-color: #effaff;
+}
+.street-address {
+	display: block;
+	margin-top: 1.6rem;
+}
 .fineprint {
   p {
     margin: 0;
     padding: .6rem;
   }
 }
+
 @media (min-width: 720px) {
 	.wrapper {
 		margin: 1.5rem auto;
@@ -107,7 +167,7 @@ p {
     .col-cards,
     .header h2,
 	.col-content {
-		display: inherit;
+		display: block;
 	}
 	.header {
 		h1 {
@@ -116,6 +176,10 @@ p {
 	  h2 {
 		font-size: 2.4rem;
 	  }
+		.col-award,
+		.col-cards {
+			vertical-align: middle;
+		}
 	}
 
 	.main,
@@ -138,7 +202,7 @@ p {
 	.col-nav,
 	.col-content,
 	.col-contact {
-		padding: 0 20px;
+		padding: 0 1.6rem;
 	}
 	.col-award,
 	.col-brand {
@@ -146,14 +210,20 @@ p {
 	}
 	.col-nav,
 	.col-contact {
-	  width: 20%;
+	  width: 25%;
 	  
+	}
+	.col-nav {
+		li {
+			border-bottom: none;
+			padding: 0;
+		}
 	}
 	.col-brand {
 	  width: 75%;
 	}
 	.col-content {
-	  width: 60%;
+	  width: 50%;
 	}
 	.photos div {
 	  width: 50%;
