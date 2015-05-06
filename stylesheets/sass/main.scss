@@ -116,6 +116,22 @@ ul {
 p {
 	margin: .6rem 0;
 }
+h4 {
+	font-size: 1.6rem;
+	&.modal-title {
+		font-size: 2rem;
+	}
+}
+.carousel-caption {
+	h3 {
+		text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
+}
 .col-award,
 .col-cards,
 .header h2,
@@ -157,6 +173,15 @@ p {
   }
 }
 
+figure {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-shadow: 10px 10px 5px #888;
+  display: block;
+	max-width: 380px;
+  margin: 20px auto;
+  padding: 1em;
+}
 @media (min-width: 720px) {
 	.wrapper {
 		margin: 1.5rem auto;

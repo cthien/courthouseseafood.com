@@ -1,93 +1,120 @@
 <!DOCTYPE html>
-<html class=no-js>
+<html>
 <head>
-<meta charset=UTF-8>
-<title>Courthouse Seafood</title>
+<meta charset="utf-8" />
+<title>Courthouse Seafood Fish Market</title>
 <link rel="profile" href="http://microformats.org/profile/hcard">
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/excite-bike/jquery-ui.css" media="screen" />
+<link rel="stylesheet" href="stylesheets/css/main.css" />
 <link rel="icon" type="image/png" href="img/favicon.png"/>
-<script src="http://www.google.com/jsapi"></script>
-<script>
-	google.load("jquery", "1.6");
-	google.load("jqueryui", "1.8");
-</script>
-<script src="js/modernizr-1.7.min.js"></script>
+
 <!-- Site designed and coded by Carl Thien -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-219983-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
-<body id="market">
-<div id="wrapper" class="vcard">
-  <header class="masthead">
+<body>
+<div class="vcard wrapper">
+  <header class="header">
+  <div class="col-award">
+    <img src="img/readerschoice.png" alt="Wicked Local Readers' Choice Awards" title="Regional Favorite winner of Readers' Choice Awards 2013"/>
+  </div>
+  <div class="col-brand">
     <h1 class="fn org"><a href="index.html" title="return to home">Courthouse Fish Market</a></h1>
-    <aside>
-    	<img src="img/readerschoice.png" alt="Wicked Local Readers' Choice Awards" title="Regional Favorite winner of Readers' Choice Awards 2013"/>
-    </aside>
     <nav>
-    <ul>
-      <li class="restaurant"><a href="menu.html" title="the restaurant menu">Restaurant</a></li>
-      <li class="market"><a href="market.html" title="the Fish Market">Fish Market</a></li>
-    </ul>
+      <ul>
+        <li class="restaurant"><a href="menu.html" title="the restaurant menu">Restaurant</a></li>
+        <li class="market"><a href="market.html" title="the Fish Market">Fish Market</a></li>
+      </ul>
     </nav>
     <h2>Quality Fresh Fish Since 1912</h2>
     <h3>We are committed to providing you with fresh seafood and friendly service.</h3>
-    <p id="creditcards"><img src="img/ccards.png" alt="Courthouse Seafood Restaurant and Market accept Visa and Mastercard" /></p>
-  </header>
-  <!-- .masthead -->
-  <div id="main">
-    <aside> <a class="dialog" href="freshseafood.html" title="Fresh Seafood at Courthouse Fish Market"><img src="img/freshseafood_sm.jpg" alt="Fresh Seafood at the Fish Market" /></a> <a class="dialog" href="fishmarket.html" title="Courthouse Fish Market from the outside"><img src="img/fishmarket_sm.jpg" alt="Courthouse Fish Market" /></a> </aside>
-    <article>
-      <div class="col1">
-        <section class="content">
-          <h2>Call <span class="tel">617-876-6716</span></h2>
-          <h4>Fresh fish is delivered to Courthouse Fish Market every day.  Many varieties are seasonal.  Prices are based on what we pay at the docks.</h4>
-          <h4>Courthouse Fish Market has the most reasonable prices and the finest seafood in New England.</h4>
-          <figure> <a class="dialog" href="eddybluefish.html" title="Eddy holding a bluefish"> <img src="img/eddybluefish_sm.jpg" alt="Eddy holding a bluefish" /> </a>
-            <figcaption>Find out what we have today</figcaption>
-          </figure>
-        </section>
-        <!-- .content -->
-        <footer class="extras">
-          <div class="box">
-            <dl>
-              <dt>Address</dt>
-              <dd>
-                <address class="adr">
-                <span class="street-address">484 Cambridge Street</span> <span class="locality">East Cambridge</span>, <span class="region">MA</span> <span class="postal-code">02141</span>
-                </address>
-              </dd>
-              <dt>Hours</dt>
-              <dd>
-                <ul>
-                  <li>Fresh Fish Market
-                    <ul>
-                      <li>Tues-Thurs 8-6</li>
-                      <li>Friday 8-7</li>
-                      <li> Saturday 8-6</li>
-                      <li>Closed Sunday and Monday</li>
-                    </ul>
-                  </li>
-                </ul>
-              </dd>
-            </dl>
-          </div>
-        </footer>
-        <!-- .extras -->
+  </div>
+  <div class="col-cards"
+    <p><img src="img/ccards.png" alt="Courthouse Seafood Restaurant and Market accept Visa and Mastercard" /></p>
+  </div>
+</header>
+
+<aside class="photos">
+  <div>
+    <a  data-toggle="modal" data-target="#photos" title="The restaurant from the outside">
+      <img src="img/restaurant_sm.jpg" alt="Courthouse Seafood Restaurant" />
+    </a>
+  </div>
+  <div>
+    <a  data-toggle="modal" data-target="#photos" title="Fisherman's Platter from the restaurant">
+      <img src="img/plate_sm.jpg" alt="Plate of fried seafood" />
+    </a>
+  </div>
+</aside>
+
+  <div id="photos" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Courthouse Seafood Restaurant and Fish Market</h4>
+        </div>
+        <div class="modal-body">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active"> <img src="img/eddybluefish.jpg" alt="Eddy holding a bluefish">
+                <div class="carousel-caption">
+                  <h3>Eddy holding a freshly caught bluefish</h3>
+                </div>
+              </div>
+              <div class="item"> <img src="img/fishmarket.jpg" alt="Fish market">
+                <div class="carousel-caption">
+                  <h3>The Fish Market</h3>
+                </div>
+              </div>
+              <div class="item"> <img src="img/freshseafood.jpg" alt="Fresh seafood">
+                <div class="carousel-caption">
+                  <h3>Fresh seafood in the Fish Market</h3>
+                </div>
+              </div>
+              <div class="item"> <img src="img/frontcounter.jpg" alt="Courthouse Seafood">
+                <div class="carousel-caption">
+                  <h3>The front counter at Courthouse Seafood</h3>
+                </div>
+              </div>
+              <div class="item"> <img src="img/plate.jpg" alt="Fishernen's Platter">
+                <div class="carousel-caption">
+                  <h3>Fisherman's Platter from the restaurant</h3>
+                </div>
+              </div>
+              <div class="item"> <img src="img/restaurant.jpg" alt="Inside Courthouse Seafood">
+                <div class="carousel-caption">
+                  <h3>The restaurant from the outside</h3>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Controls --> 
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <!-- .col1 -->
-      <div class="col2">
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal -->
+
+
+
+    <article class="main">
+      <div class="col-nav">
         <nav>
           <h3><a href="index.html" title="return to home">Homepage</a></h3>
           <h3><a href="menu.html" title="Courthouse Seafood Restaurant Menu">Menu</a></h3>
@@ -115,14 +142,77 @@
         </footer>
       </div>
       <!-- .col2 -->
+      
+      
+        <section class="col-content">
+          <h2>Call <span class="tel">617-876-6716</span></h2>
+          <h4>Fresh fish is delivered to Courthouse Fish Market every day.  Many varieties are seasonal.  Prices are based on what we pay at the docks.</h4>
+          <h4>Courthouse Fish Market has the most reasonable prices and the finest seafood in New England.</h4>
+          <figure> <a data-toggle="modal" data-target="#photos" title="Eddy holding a bluefish"> <img src="img/eddybluefish_sm.jpg" alt="Eddy holding a bluefish" /> </a>
+            <figcaption>Find out what we have today</figcaption>
+          </figure>
+        </section>
+        <!-- .content -->
+        
+        
+        <footer class="col-contact">
+          <div class="box">
+            <dl>
+              <dt>Address</dt>
+              <dd>
+                <address class="adr">
+                <span class="street-address">484 Cambridge Street</span> <span class="locality">East Cambridge</span>, <span class="region">MA</span> <span class="postal-code">02141</span>
+                </address>
+              </dd>
+              <dt>Hours</dt>
+              <dd>
+                <ul>
+                  <li>Fresh Fish Market
+                    <ul>
+                      <li>Tues-Thurs 8-6</li>
+                      <li>Friday 8-7</li>
+                      <li> Saturday 8-6</li>
+                      <li>Closed Sunday and Monday</li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </footer>
+       
+      </div>
+      <!-- .col1 -->
+      
     </article>
   </div>
   <!-- #main -->
   <footer class="fineprint">
-    <p>&copy;2014 Courthouse Seafood  | <a href="mobile.html">view mobile version</a></p>
+    <p>&copy;2015 Courthouse Seafood</p>
   </footer>
 </div>
-<!-- #wrapper -->
-<script src="js/functions.js"></script>
+<!-- .container -->
+
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script> 
+<script src="js/functions.js"></script> 
+<script>
+	$('.carousel').carousel();
+	
+	$('#photos').on('shown.bs.modal', function () {
+	  $('#myInput').focus()
+	})
+</script> 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-219983-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </body>
 </html>
