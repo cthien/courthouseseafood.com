@@ -5638,7 +5638,7 @@ button.close {
     display: none !important; } }
 body {
   color: #333;
-  font: 1.5rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 2.5rem "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   /* Old browsers */
   background: -moz-linear-gradient(top, #a0d8ef 0%, #ddf1f9 65%, #feffff 100%);
@@ -5842,13 +5842,18 @@ caption {
   margin-left: 2rem; }
 .col-menu th {
   padding-left: 1rem;
-  padding: .5rem 1rem; }
+  padding: .5rem 1rem;
+  font-weight: normal; }
 .col-menu thead th {
-  text-align: right; }
+  text-align: right;
+  font-size: 2rem; }
 .col-menu tfoot td {
   background-color: #f0f0f0; }
 
 @media (min-width: 575px) {
+  body {
+    font-size: 1.5rem; }
+
   .wrapper {
     margin: 1.5rem auto;
     border: 1px solid #264679;
@@ -5912,6 +5917,8 @@ caption {
 
   .col-menu {
     width: 100%; }
+    .col-menu thead th {
+      font-size: 1.5rem; }
 
   .col-content {
     width: 50%; }
