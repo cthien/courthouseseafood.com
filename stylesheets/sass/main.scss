@@ -253,6 +253,7 @@ caption {
 	tfoot {
 		td {
 			background-color: #f0f0f0;
+			font-size: 1.8rem;
 		}
 	}
 }
@@ -330,7 +331,8 @@ caption {
 	}
 	.col-menu {
 	  width: 100%;
-	  thead th {
+	  thead th,
+	  tfoot td {
 			font-size: 1.5rem;
 		}
 	}

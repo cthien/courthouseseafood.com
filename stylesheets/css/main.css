@@ -5848,7 +5848,8 @@ caption {
   text-align: right;
   font-size: 2rem; }
 .col-menu tfoot td {
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  font-size: 1.8rem; }
 
 @media (min-width: 575px) {
   body {
@@ -5917,7 +5918,8 @@ caption {
 
   .col-menu {
     width: 100%; }
-    .col-menu thead th {
+    .col-menu thead th,
+    .col-menu tfoot td {
       font-size: 1.5rem; }
 
   .col-content {
