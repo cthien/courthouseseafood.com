@@ -17,6 +17,7 @@ body {
 *{box-sizing: border-box;}
 img {
 	max-width: 100%;
+	width: 100%;
 }
 @font-face {
   font-family: florencesans;
@@ -58,6 +59,9 @@ img {
 		font-size: 1.4rem;
 		margin: 0;
 		padding: 1rem 0;
+	}
+	.col-cards img {
+		max-width: 82px;
 	}
 }
 .col-nav,
@@ -195,7 +199,9 @@ h4 {
     padding: .6rem;
   }
 }
-
+.photos {
+	cursor: pointer;
+}
 figure {
 	border: 1px solid #ccc;
 	border-radius: 7px;
@@ -258,6 +264,9 @@ caption {
     .header h2,
 	.flag {
 		display: block;
+		img {
+			max-width: 157px;
+		}
 	}
 	.header {
 		h1 {

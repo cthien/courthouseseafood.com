@@ -5661,7 +5661,8 @@ body {
   box-sizing: border-box; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
 
 @font-face {
   font-family: florencesans;
@@ -5695,6 +5696,8 @@ img {
     font-size: 1.4rem;
     margin: 0;
     padding: 1rem 0; }
+  .header .col-cards img {
+    max-width: 82px; }
 
 .col-nav,
 .fineprint,
@@ -5802,6 +5805,9 @@ h4 {
   margin: 0;
   padding: .6rem; }
 
+.photos {
+  cursor: pointer; }
+
 figure {
   border: 1px solid #ccc;
   border-radius: 7px;
@@ -5852,6 +5858,9 @@ caption {
   .header h2,
   .flag {
     display: block; }
+    .header h2 img,
+    .flag img {
+      max-width: 157px; }
 
   .header h1 {
     font-size: 5rem; }
