@@ -1,0 +1,88 @@
+.header, .modal, .col-menu h2, .col-nav nav,.col-nav footer dt, hr, p.flag, footer.fineprint {
+display: none;
+}
+#wrapper, #main, .col-content, .col-nav dd, table {
+display: block;
+width: 100%;
+border: none;
+}
+body {
+	font: 8pt Verdana, Geneva, Arial, sans-serif;
+	color: #000;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+table {
+padding: 3pt;
+border: thin solid #ccc;
+margin: 2pt;
+width: 47%;
+float: left;
+}
+td,th,caption,
+.col-menu th {
+	padding: 1px;
+	margin: 0;
+}
+th {
+text-align: left;
+}
+.col-menu tfoot td {
+border: none;
+font-size: 6pt;
+}
+tbody th {
+font-weight: normal;
+}
+caption {
+font-weight: bold;
+}
+.col-nav footer {
+	margin-bottom: 10px;
+}
+.col-nav dt, .col-nav dd {
+	display: inline;
+}
+.col-nav,
+.col-nav ul,
+.col-nav ul li,
+.col-nav ul ul,
+.col-nav ul ul li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 8pt;
+}
+.col-nav dl ul li {
+	width: 32%;
+	display: inline-block;
+	line-height: 1;
+}
+.col-nav ul ul {
+	display: inline;
+	width: auto;
+}
+.col-menu,
+.col-nav,
+.col-nav footer,
+.col-nav footer dl, 
+.col-nav footer dd,
+.col-nav footer dl ul,
+.col-nav footer dl li {
+	padding: 0;
+	margin:0;
+}
+.col-nav footer dl {
+	display: inline;
+	font-weight: bold;
+	font-size: 11pt;
+	padding: 0;
+}
+.col-nav footer dl ul ul li {
+	display: inline;
+}
+/*table, thead, tfoot, tr {
+page-break-inside: avoid;
+}*/

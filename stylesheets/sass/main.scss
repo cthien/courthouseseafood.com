@@ -18,7 +18,6 @@ body {
 img {
 	max-width: 100%;
 }
-
 @font-face {
   font-family: florencesans;
   src: url(fonts/Florsn30.eot);
@@ -35,6 +34,10 @@ img {
 			margin-left: 1rem;
 			padding-left: 1rem;
 		}
+		a {
+			text-decoration: underline;
+			font-size: 3rem;
+		}
 	}
 	a {
 		color: #fff;
@@ -42,6 +45,9 @@ img {
 	h1 {
 		font: 3rem florencesans, Helvetica, Arial, sans-serif;
 		margin-top: 0;
+		a:hover {
+			text-decoration: none;
+		}
 	}
 	h2 {
 		color: #264679;
@@ -74,8 +80,15 @@ dt {
 	}
   li {
 		list-style: none;
-    padding: .4rem 0;
+    
     border-bottom: 1px solid #ccc;
+		a {
+			display: block;
+			padding: 1rem 0;
+			&:hover {
+				background-color: lighten( #992D23, 10% )
+			}
+		}
   } 
 	footer {
 		padding-bottom: 1.6rem;
@@ -91,12 +104,13 @@ dt {
 			}
 			ul {
 				margin-bottom: 0;
+				list-style: none;
 				ul li {
 					list-style: disc;
 					margin-left: 2rem;
 					padding: 0;
 				}
-				li:last-child {
+				li + li + li {
 					margin-left: 2rem;
 				}
 			}
@@ -116,11 +130,18 @@ ul {
 p {
 	margin: .6rem 0;
 }
+dt {
+	font-weight: normal;
+}
 h4 {
 	font-size: 1.6rem;
 	&.modal-title {
 		font-size: 2rem;
 	}
+}
+.flag {
+	text-align: center;
+	display: none;
 }
 .carousel-caption {
 	h3 {
@@ -147,8 +168,10 @@ h4 {
 		li {
 			font-weight: bold;
 			margin-top: 1.6rem;
+			list-style: none;
 			ul li {
 				font-weight: normal;
+				list-style: disc;
 				margin-top: 0;
 			}
 		}
@@ -174,24 +197,66 @@ h4 {
 }
 
 figure {
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  box-shadow: 10px 10px 5px #888;
-  display: block;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	box-shadow: 10px 10px 5px #888;
+	display: block;
 	max-width: 380px;
-  margin: 20px auto;
-  padding: 1em;
+	margin: 20px auto;
+	padding: 1em;
 }
-@media (min-width: 720px) {
+table {
+	border: 2px solid #ccc;
+	width: 96%;
+	margin: 3rem auto;
+}
+td {
+	text-align: right;
+	padding: .5rem 1rem;
+	&:nth-child(1),
+	&.first,
+	&[colspan] {
+		text-align: left;
+	}
+}
+tr:nth-child(2n) {
+	background-color: #cfefff;
+}
+caption {
+	background-color: #ccc;
+	padding-left: 1rem;
+}
+.main {
+	background-color: #effaff;
+}
+.col-menu {
+	h2 {
+		margin-left: 2rem;
+	}
+	th {
+		padding-left: 1rem;
+		padding: .5rem 1rem;
+	}
+	thead {
+		th {
+			text-align: right;
+		}
+	}
+	tfoot {
+		td {
+			background-color: #f0f0f0;
+		}
+	}
+}
+@media (min-width: 575px) {
 	.wrapper {
 		margin: 1.5rem auto;
 		border: 1px solid #264679;
 		border-radius: .8rem;
+		max-width: 1142px;
 	}
-	.col-award,
-    .col-cards,
     .header h2,
-	.col-content {
+	.flag {
 		display: block;
 	}
 	.header {
@@ -206,19 +271,18 @@ figure {
 			vertical-align: middle;
 		}
 	}
-
 	.main,
 	.header,
-	.photos{
+	.photos {
 	  display: table;
 	}
 	.col-award,
 	.col-brand,
 	.col-cards,
 	.col-nav,
-	.col-content,
 	.col-contact,
-	.photos div{
+	.photos div,
+	.menu {
 	  display: table-cell;
 	}
 	.col-award,
@@ -235,17 +299,23 @@ figure {
 	}
 	.col-nav,
 	.col-contact {
-	  width: 25%;
-	  
+	  width: 25%; 
 	}
 	.col-nav {
 		li {
 			border-bottom: none;
 			padding: 0;
+			a {
+				padding: .2rem 0;
+				text-decoration: underline;
+			}
 		}
 	}
 	.col-brand {
 	  width: 75%;
+	}
+	.col-menu {
+	  width: 100%;
 	}
 	.col-content {
 	  width: 50%;
@@ -257,12 +327,18 @@ figure {
 	  border-left: 1px dashed #992D23;
 	}
 	.fineprint {
-	  padding: 1px 1.5rem 1px 0;
+		padding: 1px 1.5rem 1px 0;
 		text-align: right;
 	}
 }
-@media (min-width: 1200px) {
-  .wrapper {
-    width: 1142px;
-  }
+@media (min-width: 720px) {
+	.col-content {
+		display: table-cell;
+	}
+	.col-contact dd li span {
+		display: none;
+	}
+	.header li a {
+		font-size: inherit;
+	}
 }
