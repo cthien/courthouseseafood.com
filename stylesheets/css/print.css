@@ -1,4 +1,4 @@
-.header, .modal, .col-menu h2, .col-nav nav,.col-nav footer dt, hr, p.flag, footer.fineprint {
+.header, .modal, .col-menu h2, .col-nav nav,.col-nav footer dt, hr, p.flag, .contact, footer.fineprint {
 display: none;
 }
 #wrapper, #main, .col-content, .col-nav dd, table {
@@ -6,7 +6,8 @@ display: block;
 width: 100%;
 border: none;
 }
-body {
+body,
+.col-menu thead th {
 	font: 8pt Verdana, Geneva, Arial, sans-serif;
 	color: #000;
 	background: #fff;
@@ -27,6 +28,9 @@ td,th,caption,
 }
 th {
 text-align: left;
+}
+.col-menu {
+	border-top: none;
 }
 .col-menu tfoot td {
 border: none;

@@ -79,21 +79,23 @@ dt {
     margin: 0;
     padding: 1rem 0;
   }
-	ul {
-		margin-bottom: 1.6rem;
-	}
-  li {
-		list-style: none;
-    
-    border-bottom: 1px solid #ccc;
-		a {
-			display: block;
-			padding: 1rem 0;
-			&:hover {
-				background-color: lighten( #992D23, 10% )
-			}
+	nav {
+		ul {
+			margin-bottom: 1.6rem;
 		}
-  } 
+	  li {
+			list-style: none;
+		
+		border-bottom: 1px solid #ccc;
+			a {
+				display: block;
+				padding: 1rem 0;
+				&:hover {
+					background-color: lighten( #992D23, 10% )
+				}
+			}
+  		} 
+	}
 	footer {
 		padding-bottom: 1.6rem;
 		dl {
@@ -163,7 +165,13 @@ h4 {
 .col-content {
 	display: none;
 }
+.contact,
 .col-contact {
+	background-color: #effaff;
+	color: #333;
+	dl {
+		margin-bottom: 0;
+	}
 	dt {
 		padding: 0 1rem;
 	}
@@ -236,6 +244,7 @@ caption {
 	background-color: #effaff;
 }
 .col-menu {
+	border-top: 2rem solid #992D23;
 	h2 {
 		margin-left: 2rem;
 	}

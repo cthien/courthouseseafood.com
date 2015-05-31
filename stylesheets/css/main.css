@@ -5714,15 +5714,15 @@ dt {
   .col-nav h3 {
     margin: 0;
     padding: 1rem 0; }
-  .col-nav ul {
+  .col-nav nav ul {
     margin-bottom: 1.6rem; }
-  .col-nav li {
+  .col-nav nav li {
     list-style: none;
     border-bottom: 1px solid #ccc; }
-    .col-nav li a {
+    .col-nav nav li a {
       display: block;
       padding: 1rem 0; }
-      .col-nav li a:hover {
+      .col-nav nav li a:hover {
         background-color: #c3392c; }
   .col-nav footer {
     padding-bottom: 1.6rem; }
@@ -5777,21 +5777,33 @@ h4 {
 .col-content {
   display: none; }
 
-.col-contact dt {
-  padding: 0 1rem; }
-.col-contact dd {
-  margin: 0 1rem; }
-  .col-contact dd li {
-    font-weight: bold;
-    margin-top: 1.6rem;
-    list-style: none; }
-    .col-contact dd li ul li {
-      font-weight: normal;
+.contact,
+.col-contact {
+  background-color: #effaff;
+  color: #333; }
+  .contact dl,
+  .col-contact dl {
+    margin-bottom: 0; }
+  .contact dt,
+  .col-contact dt {
+    padding: 0 1rem; }
+  .contact dd,
+  .col-contact dd {
+    margin: 0 1rem; }
+    .contact dd li,
+    .col-contact dd li {
+      font-weight: bold;
+      margin-top: 1.6rem;
+      list-style: none; }
+      .contact dd li ul li,
+      .col-contact dd li ul li {
+        font-weight: normal;
+        list-style: disc;
+        margin-top: 0; }
+    .contact dd ul ul,
+    .col-contact dd ul ul {
       list-style: disc;
-      margin-top: 0; }
-  .col-contact dd ul ul {
-    list-style: disc;
-    margin-left: 2rem; }
+      margin-left: 2rem; }
 
 .col-content,
 .col-contact {
@@ -5838,18 +5850,20 @@ caption {
 .main {
   background-color: #effaff; }
 
-.col-menu h2 {
-  margin-left: 2rem; }
-.col-menu th {
-  padding-left: 1rem;
-  padding: .5rem 1rem;
-  font-weight: normal; }
-.col-menu thead th {
-  text-align: right;
-  font-size: 2rem; }
-.col-menu tfoot td {
-  background-color: #f0f0f0;
-  font-size: 1.8rem; }
+.col-menu {
+  border-top: 2rem solid #992D23; }
+  .col-menu h2 {
+    margin-left: 2rem; }
+  .col-menu th {
+    padding-left: 1rem;
+    padding: .5rem 1rem;
+    font-weight: normal; }
+  .col-menu thead th {
+    text-align: right;
+    font-size: 2rem; }
+  .col-menu tfoot td {
+    background-color: #f0f0f0;
+    font-size: 1.8rem; }
 
 @media (min-width: 575px) {
   body {
