@@ -266,6 +266,18 @@ caption {
 		}
 	}
 }
+.drink {
+	tr {
+		vertical-align: top;
+		td + td {
+			display: none;
+		}
+	}
+	ul {
+			text-align: left;
+			font-size: 2rem;
+	}
+}
 @media (min-width: 575px) {
 	body {
 		font-size: 1.5rem;
@@ -357,6 +369,14 @@ caption {
 	.fineprint {
 		padding: 1px 1.5rem 1px 0;
 		text-align: right;
+	}
+	.drink {
+		tr td + td {
+			display: inherit;
+		}
+		ul {
+			font-size: 1.5rem;
+		}
 	}
 }
 @media (min-width: 720px) {
