@@ -215,7 +215,6 @@ figure {
 	border-radius: 7px;
 	box-shadow: 10px 10px 5px #888;
 	display: block;
-	max-width: 380px;
 	margin: 20px auto;
 	padding: 1em;
 }
@@ -277,6 +276,10 @@ caption {
 			text-align: left;
 			font-size: 2rem;
 	}
+}
+.modal-dialog  {
+	width: 95%;
+	max-width:900px;
 }
 @media (min-width: 575px) {
 	body {
